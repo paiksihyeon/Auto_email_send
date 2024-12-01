@@ -19,19 +19,27 @@ def send_email_via_naver(email, number, mail_user, mail_password):
         subject = "[한우리 X 아삭 X 웨이브] 웨이브 이벤트 쿠폰 당첨 안내"
 
         # HTML 형식의 이메일 본문
+        # HTML 형식의 이메일 본문
         body = (f"""
         <html>
         <body>
-            <p>안녕하세요. <strong><span style="color:purple;">한우리 21기</span></strong>입니다.</p>
-            <p>먼저, 한우리 X 아삭 X 웨이브 이벤트에 참여해 주셔서 감사합니다. 이벤트에 당첨되어 쿠폰 번호를 보내드립니다.</p>
+            <p style="color: black !important;"> ☝️ 하나에서, 우리로! 🙌 </p>
+            <p style="color: black !important;">안녕하세요! 한신대학교 학생 홍보대사 <strong><span style="color:purple;">💜한우리 21기💜</span></strong>입니다.</p>
+            <p style="color: black !important;">먼저, 한우리 X 아삭 X 웨이브 🍁‘아삭! 너 한우리랑 Wavve 탈래?’🍁 이벤트에 참여해 주셔서 감사합니다.</p>
+            <p style="color: black !important;">이벤트에 당첨되셔서 <strong>Wavve 2개월 이용권 쿠폰 번호</strong>를 보내드립니다.</p>
             <br><br>
-            <div style="border: 1px solid black; padding: 40px 10px; text-align: center; width: 50%;">쿠폰 번호는 <strong>'{number}'</strong> 입니다.</div>
+            <div style="border: 1px solid black !important; padding: 40px 10px !important; text-align: center !important; width: 50% !important;">
+                쿠폰 번호는 <strong>'{number}'</strong> 입니다.
+            </div>
             <br><br>
-            <p>앞으로 한우리 21기 많은 관심 부탁드립니다. 감사합니다.</p>
+            <p style="color: black !important;">앞으로 한우리 21기 많은 관심 부탁드립니다. 감사합니다.</p>
             <br><br>
-            <p><strong><유의 사항></strong></p>
+            <p style="color: black !important;"><strong>[유의 사항]</strong></p>
+            <ul style="color: black !important;">
                 <li>본 쿠폰은 앱을 통한 쿠폰 등록이 불가하며, PC 혹은 웹을 통한 우회 방식으로 등록을 해주시길 바랍니다.</li>
                 <li>본 쿠폰은 2개월 제한이며, 2개월 만료 후 해지하지 않을 시 자동 결제됩니다.</li>
+                <li>문의사항💜💌은 한우리 오픈 채팅방을 이용해 주세요. https://open.kakao.com/o/sDObB70g </li>
+            </ul>
         </body>
         </html>
         """)
